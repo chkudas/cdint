@@ -20,8 +20,8 @@ spec:
         image: ${DOCKER_REPO}/${DOCKER_IMG_NAME}:${BUILD_NUM}
         ports:
         - containerPort: 80
-        imagePullSecrets:
-        - name: regcred
+      imagePullSecrets:
+      - name: regcred
 ---
 apiVersion: v1
 kind: Service
